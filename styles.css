@@ -869,3 +869,49 @@ h4 {
 .mockup-section {
     padding: 20px 0 0;
 }
+
+/* QUEBRA DE CRENÇA */
+.crenca {
+    padding: 80px 0 60px;
+}
+
+.crenca-line {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.1rem, 3.5vw, 1.6rem);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.crenca-destaque {
+    color: var(--purple-l);
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    margin-bottom: 40px;
+}
+
+.crenca-body {
+    color: var(--muted);
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    line-height: 1.9;
+    margin-bottom: 36px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crenca-remate {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    color: var(--muted);
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.crenca-ouro {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-weight: 700;
+    color: var(--gold-l);
+    line-height: 1.1;
+    text-shadow: 0 0 40px rgba(245, 158, 11, 0.4);
+}
