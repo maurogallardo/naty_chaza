@@ -1,21 +1,463 @@
-/* VSL */
-.vsl-section { background: var(--bg2); padding: 60px 0; }
-.vsl-wrap {
-max-width: 780px;
-margin: 0 auto;
-border-radius: 16px;
-overflow: hidden;
-border: 1px solid var(--card-bdr);
-aspect-ratio: 16/9;
-position: relative;
-box-shadow: 0 0 80px rgba(124,58,237,0.2);
-}
-.vsl-wrap iframe {
-position: absolute;
-top: 0; left: 0;
-width: 100%; height: 100%;
-border: none;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-/* MOCKUP SECTION */
-.mockup-section { padding: 20px 0 0; }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Tarot com Naty Chaza — Sua primeira leitura em 7 dias</title>
+    <meta name="description"
+        content="Aprenda a ler o Tarot do zero com método, prática e correção guiada. Faça sua primeira leitura em 7 dias." />
+
+    <!-- META PIXEL — trocá XXXXXXXXXXXXXXXX pelo teu Pixel ID -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'XXXXXXXXXXXXXXXX');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXXX&ev=PageView&noscript=1" /></noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <canvas id="stars"></canvas>
+
+    <!-- 1. HERO -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="badge-top reveal">✦ Método Naty Chaza ✦</div>
+            <h1 class="reveal">
+                Descubra o método simples para fazer sua
+                <span class="highlight"> primeira leitura de Tarot em 7 dias</span>
+            </h1>
+            <h2 class="reveal">Mesmo que você nunca tenha tocado em um baralho</h2>
+            <p class="hero-sub reveal">
+                Com prática guiada e um sistema que te mostra<br>
+                <strong>exatamente o que fazer — do começo ao fim</strong>
+            </p>
+            <ul class="hero-bullets reveal">
+                <li><span class="check">✦</span> Sem experiência prévia</li>
+                <li><span class="check">✦</span> Sem precisar ter "dom"</li>
+                <li><span class="check">✦</span> Com prática real para ganhar segurança</li>
+            </ul>
+            <a href="https://pay.hotmart.com/LINK-DO-CURSO-AQUI" class="btn-primary reveal"
+                onclick="fbq('track','InitiateCheckout')">
+                Começar agora ✦
+            </a>
+            <div class="hero-symbols">
+                <span class="sym sym-1">🌙</span>
+                <span class="sym sym-2">⭐</span>
+                <span class="sym sym-3">🔮</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- VSL -->
+    <section class="section vsl-section">
+        <div class="container">
+            <div class="vsl-wrap reveal">
+                <iframe src="https://www.youtube.com/embed/FP03aPBVliI?start=194" title="Curso de Tarot Naty Chaza"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. VISUAL / MOCKUP -->
+    <section class="section mockup-section">
+        <div class="container">
+            <img src="PACK 17 SIMPATIAS.png" alt="Curso de Tarot Naty Chaza" class="offer-img reveal" />
+        </div>
+    </section>
+
+    <!-- 3. QUEBRA DE CRENÇA -->
+    <section class="section identify">
+        <div class="container">
+            <p class="section-label reveal">O que está te travando</p>
+            <h3 class="section-title reveal">O problema não é aprender as cartas.</h3>
+            <div class="insight-box reveal" style="margin-bottom: 32px;">
+                <p>O problema é <strong>não saber estruturar uma leitura.</strong><br><br>
+                    Com este método, você vai conseguir fazer sua primeira leitura em até 7 dias.<br>
+                    Mesmo sem experiência. Mesmo começando do zero.<br>
+                    Mesmo achando que ainda não está pronto.<br><br>
+                    Porque aqui você não vai só aprender…<br>
+                    <span class="gold">Você vai praticar.</span>
+                </p>
+            </div>
+
+            <!-- 4. IDENTIFICAÇÃO -->
+            <p class="section-label reveal">Isso é pra você?</p>
+            <h3 class="section-title reveal">Se você se identifica com alguma dessas situações...</h3>
+            <div class="identify-grid">
+                <div class="identify-card reveal">
+                    <div class="id-icon">🃏</div>
+                    <p>"Gosto do Tarot mas não sei por onde começar"</p>
+                </div>
+                <div class="identify-card reveal">
+                    <div class="id-icon">🌟</div>
+                    <p>"Tenho as cartas mas não sei como interpretá-las"</p>
+                </div>
+                <div class="identify-card reveal">
+                    <div class="id-icon">💫</div>
+                    <p>"Vejo muito conteúdo mas não consigo avançar"</p>
+                </div>
+                <div class="identify-card reveal">
+                    <div class="id-icon">💰</div>
+                    <p>"Já pensei em transformar isso em uma fonte de renda"</p>
+                </div>
+            </div>
+            <div class="insight-box reveal">
+                <p class="insight-label">Então este curso é para você</p>
+                <p>A maioria dos cursos te enche de teoria.<br>
+                    Aqui você aprende diferente:</p>
+                <ul class="hero-bullets" style="margin: 16px auto 0; text-align:left; display:inline-flex;">
+                    <li><span class="check">✦</span> Método claro</li>
+                    <li><span class="check">✦</span> Prática guiada</li>
+                    <li><span class="check">✦</span> Direção do começo ao fim</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. O MÉTODO — 3 PILARES -->
+    <section class="section pillars">
+        <div class="container">
+            <p class="section-label reveal">Como funciona</p>
+            <h3 class="section-title reveal">Você não precisa aprender tudo.<br>Você precisa seguir uma sequência.</h3>
+            <div class="pillars-grid">
+                <div class="pillar-card reveal">
+                    <div class="pillar-num">01</div>
+                    <h4>Entender</h4>
+                    <ul>
+                        <li>Os 22 Arcanos Maiores</li>
+                        <li>Sistema positivo e negativo</li>
+                        <li>Significados sem decorar</li>
+                    </ul>
+                </div>
+                <div class="pillar-card reveal">
+                    <div class="pillar-num">02</div>
+                    <h4>Estruturar</h4>
+                    <ul>
+                        <li>Como organizar uma resposta</li>
+                        <li>Como interpretar sem decorar</li>
+                        <li>Tiradas práticas do zero</li>
+                    </ul>
+                </div>
+                <div class="pillar-card reveal">
+                    <div class="pillar-num">03</div>
+                    <h4>Praticar</h4>
+                    <ul>
+                        <li>Cliente incógnito (IA)</li>
+                        <li>Correção automática das leituras</li>
+                        <li>Confiança real na prática</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dif-result reveal" style="margin-top: 40px;">
+                <p>É isso que transforma <strong>conhecimento em segurança.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. EXPERIÊNCIA DENTRO DO CURSO -->
+    <section class="section identify">
+        <div class="container">
+            <p class="section-label reveal">Como é por dentro</p>
+            <h3 class="section-title reveal">Assim que você entra, o acesso é imediato</h3>
+            <div class="identify-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px,1fr));">
+                <div class="identify-card reveal">
+                    <div class="id-icon">🎬</div>
+                    <p>O curso completo gravado</p>
+                </div>
+                <div class="identify-card reveal">
+                    <div class="id-icon">📋</div>
+                    <p>Um plano claro de estudo</p>
+                </div>
+                <div class="identify-card reveal">
+                    <div class="id-icon">🤖</div>
+                    <p>A prática guiada com correção</p>
+                </div>
+            </div>
+            <div class="insight-box reveal" style="margin-top: 32px;">
+                <p class="insight-label">O processo é simples</p>
+                <p>Você estuda → Você aplica → Você pratica → Você recebe feedback<br><br>
+                    <span class="gold">Sem confusão. Sem excesso de informação. Sem travar.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. DIFERENCIAL — CLIENTE INCÓGNITO -->
+    <section class="section diferencial">
+        <div class="container">
+            <p class="section-label reveal">O grande diferencial</p>
+            <h3 class="section-title reveal">Aqui é onde a maioria trava.<br>E é exatamente aqui que você avança.</h3>
+            <div class="dif-grid">
+                <div class="dif-card reveal">
+                    <div class="dif-icon">🤖</div>
+                    <h4>Cliente incógnito</h4>
+                    <p>Simula uma consulta real. Faz perguntas como um cliente de verdade para você praticar sem medo —
+                        quantas vezes quiser. Sem julgamento. Sem pressão.</p>
+                </div>
+                <div class="dif-card reveal">
+                    <div class="dif-icon">✅</div>
+                    <h4>Correção automática</h4>
+                    <p>Você recebe uma análise completa da sua leitura: o que fez certo, onde pode melhorar e como
+                        responder melhor. É isso que te dá segurança.</p>
+                </div>
+            </div>
+            <div class="dif-result reveal">
+                <p>Resultado: <strong>você pratica sem medo e ganha segurança real</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. O QUE VOCÊ VAI CONSEGUIR -->
+    <section class="section pillars">
+        <div class="container">
+            <p class="section-label reveal">Transformação</p>
+            <h3 class="section-title reveal">Ao final do processo, você vai conseguir</h3>
+            <div class="pillars-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px,1fr));">
+                <div class="pillar-card reveal">
+                    <div class="pillar-num">🃏</div>
+                    <h4>Ler com clareza</h4>
+                    <ul>
+                        <li>Interpretar sem depender de outros</li>
+                    </ul>
+                </div>
+                <div class="pillar-card reveal">
+                    <div class="pillar-num">💬</div>
+                    <h4>Responder perguntas reais</h4>
+                    <ul>
+                        <li>Leitura estruturada do começo ao fim</li>
+                    </ul>
+                </div>
+                <div class="pillar-card reveal">
+                    <div class="pillar-num">💰</div>
+                    <h4>Dar o próximo passo</h4>
+                    <ul>
+                        <li>Começar a atender e gerar seus primeiros ganhos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9 + 10. CONTEÚDO + MATERIAIS -->
+    <section class="section modules">
+        <div class="container">
+            <p class="section-label reveal">Conteúdo do curso</p>
+            <h3 class="section-title reveal">O que você vai aprender</h3>
+            <div class="modules-grid">
+                <div class="module-card reveal">
+                    <span class="mod-tag">Módulo 1</span>
+                    <h4>Base</h4>
+                    <ul>
+                        <li>Introdução ao Tarot</li>
+                        <li>Plano para sua primeira leitura em 7 dias</li>
+                        <li>Fundamentos essenciais</li>
+                    </ul>
+                </div>
+                <div class="module-card reveal">
+                    <span class="mod-tag">Módulo 2</span>
+                    <h4>Arcanos Maiores</h4>
+                    <ul>
+                        <li>As 22 cartas explicadas de forma prática</li>
+                        <li>Sistema positivo e negativo</li>
+                        <li>Símbolos e arquétipos</li>
+                    </ul>
+                </div>
+                <div class="module-card reveal">
+                    <span class="mod-tag">Módulo 3</span>
+                    <h4>Leitura</h4>
+                    <ul>
+                        <li>Método de leitura simplificado</li>
+                        <li>Como interpretar as cartas</li>
+                        <li>Como estruturar respostas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bonus-box reveal">
+                <p class="bonus-title">✦ Além das aulas, você também recebe</p>
+                <div class="bonus-grid">
+                    <span>📅 Plano de ação 7 dias</span>
+                    <span>📖 Guia de estudo</span>
+                    <span>🃏 Referências visuais das cartas</span>
+                    <span>🤖 Sistema de prática com IA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. PARA QUEM É / NÃO É -->
+    <section class="section forquem">
+        <div class="container">
+            <p class="section-label reveal">Pra quem é</p>
+            <h3 class="section-title reveal">Este curso é para você?</h3>
+            <div class="forquem-grid">
+                <div class="forquem-card reveal">
+                    <h4 class="fq-title yes">✦ É para você</h4>
+                    <ul>
+                        <li>Quem está começando do zero</li>
+                        <li>Quem quer aprender Tarot de verdade</li>
+                        <li>Quem quer praticar e ganhar segurança</li>
+                        <li>Quem pensa em transformar isso em renda</li>
+                    </ul>
+                </div>
+                <div class="forquem-card reveal">
+                    <h4 class="fq-title no">✗ Não é para você</h4>
+                    <ul>
+                        <li>Quem quer só assistir sem aplicar</li>
+                        <li>Quem não está disposto a praticar</li>
+                        <li>Quem espera resultado sem dedicação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. OFERTA -->
+    <section class="section offer" id="oferta">
+        <div class="container">
+            <img src="PACK 17 SIMPATIAS.png" alt="Mockup do curso" class="offer-img reveal" />
+            <p class="section-label reveal">Investimento</p>
+            <h3 class="section-title reveal">Ao entrar hoje, você recebe</h3>
+            <div class="offer-box reveal">
+                <ul class="offer-list">
+                    <li><span class="cg">✦</span> Acesso imediato ao curso completo</li>
+                    <li><span class="cg">✦</span> Plano de estudo passo a passo</li>
+                    <li><span class="cg">✦</span> Cliente incógnito para prática</li>
+                    <li><span class="cg">✦</span> Sistema de correção automática</li>
+                    <li><span class="cg">✦</span> Plano de ação de 7 dias</li>
+                    <li><span class="cg">✦</span> Referências visuais das cartas</li>
+                </ul>
+                <div class="offer-price-block">
+                    <p class="offer-from">de R$ 297</p>
+                    <p class="offer-price">R$ 97<span>,00</span></p>
+                    <p class="offer-parcels">ou em até 12x no cartão</p>
+                    <a href="https://pay.hotmart.com/LINK-DO-CURSO-AQUI" class="btn-primary big"
+                        onclick="fbq('track','Purchase')">
+                        Quero meu acesso agora ✦
+                    </a>
+                    <p class="offer-secure">🔒 Pagamento 100% seguro via Hotmart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. GARANTIA -->
+    <section class="section guarantee">
+        <div class="container">
+            <div class="guarantee-box reveal">
+                <div class="gu-icon">🛡️</div>
+                <h4>Garantia incondicional de 7 dias</h4>
+                <p>Você pode acessar o curso, estudar e praticar. Se não fizer sentido para você, é só pedir o
+                    reembolso. Sem perguntas. Sem risco.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <p class="section-label reveal">Dúvidas frequentes</p>
+            <h3 class="section-title reveal">Perguntas e respostas</h3>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Preciso ter experiência? <span class="fa">▾</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Não. O curso foi feito para iniciantes. Você começa do zero e segue o método passo a passo.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        E se eu nunca usei Tarot? <span class="fa">▾</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Melhor ainda. Você começa do jeito certo, sem vícios e com método claro do começo ao fim.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Quanto tempo preciso por dia? <span class="fa">▾</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Pouco tempo — seguindo o plano de 7 dias, 20 a 30 minutos por dia são suficientes para chegar
+                            à sua primeira leitura.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Como funciona a prática com o cliente incógnito? <span class="fa">▾</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Você responde a um cliente simulado com IA e recebe correção automática da sua leitura. Pode
+                            praticar quantas vezes quiser, sem julgamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        Como recebo acesso após a compra? <span class="fa">▾</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Imediatamente. Assim que o pagamento é confirmado você recebe o link por e-mail direto da
+                            Hotmart.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14 + 16. CTA FINAL / CIERRE -->
+    <section class="section closing">
+        <div class="container">
+            <div class="closing-box reveal">
+                <h3>Daqui a 7 dias o tempo vai passar de qualquer forma</h3>
+                <p>A diferença é:<br>
+                    Continuar no mesmo lugar…<br>
+                    Ou estar fazendo suas primeiras leituras com segurança.<br><br>
+                    Com método. Com prática. Com direção.<br>
+                    <strong>A escolha é sua.</strong>
+                </p>
+                <a href="https://pay.hotmart.com/LINK-DO-CURSO-AQUI" class="btn-primary big"
+                    onclick="fbq('track','InitiateCheckout')">
+                    Começar agora ✦
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-name">✦ Naty Chaza ✦</p>
+            <p class="footer-sub">Tarot com método, prática e propósito</p>
+            <p class="footer-legal">© 2025 Naty Chaza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
