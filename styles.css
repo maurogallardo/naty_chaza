@@ -57,7 +57,7 @@ body {
 /* TYPOGRAPHY */
 h1 {
     font-family: 'Cinzel', serif;
-    font-size: clamp(1.7rem, 6.5vw, 2.6rem);
+    font-size: clamp(2rem, 8vw, 2.6rem);
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 12px;
