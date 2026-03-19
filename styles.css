@@ -57,10 +57,10 @@ body {
 /* TYPOGRAPHY */
 h1 {
     font-family: 'Cinzel', serif;
-    font-size: clamp(1.35rem, 5.5vw, 2.6rem);
+    font-size: clamp(1.7rem, 6.5vw, 2.6rem);
     font-weight: 700;
     line-height: 1.15;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 h2 {
@@ -117,7 +117,7 @@ h4 {
     min-height: auto;
     display: flex;
     align-items: center;
-    padding: 25px 0 24px;
+    padding: 40px 0 28px;
     overflow: hidden;
 }
 
@@ -146,10 +146,10 @@ h4 {
 }
 
 .hero-sub {
-    font-size: clamp(0.88rem, 2.2vw, 1.1rem);
+    font-size: clamp(0.95rem, 2.8vw, 1.1rem);
     color: var(--muted);
-    margin-bottom: 20px;
-    line-height: 1.6;
+    margin-bottom: 22px;
+    line-height: 1.65;
 }
 
 .hero-sub strong {
@@ -160,9 +160,10 @@ h4 {
     list-style: none;
     display: inline-flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     text-align: left;
-    margin: 0 auto 24px;
+    margin: 0 auto 28px;
+    font-size: 1rem;
 }
 
 .hero-bullets li {
