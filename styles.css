@@ -57,10 +57,10 @@ body {
 /* TYPOGRAPHY */
 h1 {
     font-family: 'Cinzel', serif;
-    font-size: clamp(2rem, 8vw, 2.6rem);
+    font-size: clamp(2.2rem, 9vw, 2.6rem);
     font-weight: 700;
     line-height: 1.15;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 h2 {
@@ -149,7 +149,7 @@ h4 {
 
 .hero-sub {
     font-family: 'Cinzel', serif;
-    font-size: clamp(0.82rem, 1.4vw, 1rem);
+    font-size: clamp(1rem, 3.5vw, 1rem);
     font-weight: 400;
     color: var(--white);
     margin-bottom: 28px;
