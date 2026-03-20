@@ -255,6 +255,7 @@ h4 {
 /* IDENTIFY */
 .identify {
     background: var(--bg2);
+    padding: 60px 0;
 }
 
 .identify-grid {
