@@ -106,11 +106,12 @@ h4 {
 
 .section-title {
     font-family: 'Cinzel', serif;
-    font-size: clamp(1.4rem, 4vw, 2.2rem);
-    font-weight: 600;
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    font-weight: 700;
     margin-bottom: 48px;
     line-height: 1.3;
     padding: 0 16px;
+    color: var(--gold-l);
 }
 
 /* HERO */
@@ -897,8 +898,9 @@ h4 {
 }
 
 .crenca-destaque {
-    color: var(--purple-l);
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    color: var(--gold-l);
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    font-weight: 700;
     margin-bottom: 40px;
 }
 
@@ -925,4 +927,12 @@ h4 {
     color: var(--gold-l);
     line-height: 1.1;
     text-shadow: 0 0 40px rgba(245, 158, 11, 0.4);
+}
+
+.closing-box h3 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--gold-l);
 }
