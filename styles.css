@@ -29,8 +29,8 @@ body {
     background: var(--bg);
     color: var(--white);
     font-family: 'Nunito', sans-serif;
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.85;
     overflow-x: hidden;
 }
 
@@ -287,14 +287,15 @@ h4 {
 }
 
 .id-icon {
-    font-size: 2rem;
-    margin-bottom: 12px;
+    font-size: 2.6rem;
+    margin-bottom: 14px;
 }
 
 .identify-card p {
-    font-size: 0.92rem;
+    font-size: 1rem;
     color: var(--muted);
     font-style: italic;
+    line-height: 1.7;
 }
 
 .insight-box {
@@ -370,7 +371,7 @@ h4 {
 }
 
 .pillar-card li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--muted);
     padding-left: 16px;
     position: relative;
@@ -423,7 +424,7 @@ h4 {
 
 .dif-card p {
     color: var(--muted);
-    font-size: 0.93rem;
+    font-size: 1rem;
 }
 
 .dif-result {
@@ -484,7 +485,7 @@ h4 {
 }
 
 .module-card li {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: var(--muted);
     padding-left: 14px;
     position: relative;
@@ -560,7 +561,7 @@ h4 {
 }
 
 .forquem-card li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--muted);
     padding-left: 16px;
     position: relative;
@@ -600,7 +601,7 @@ h4 {
 }
 
 .offer-list li {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--white);
     display: flex;
     align-items: center;
@@ -676,7 +677,7 @@ h4 {
 
 .guarantee-box p {
     color: var(--muted);
-    font-size: 0.93rem;
+    font-size: 1rem;
 }
 
 /* FAQ */
@@ -711,7 +712,7 @@ h4 {
     border: none;
     color: var(--white);
     font-family: 'Nunito', sans-serif;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 600;
     padding: 18px 20px;
     cursor: pointer;
@@ -742,7 +743,7 @@ h4 {
 .faq-a p {
     padding: 0 20px 18px;
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* FECHAMENTO */
@@ -902,9 +903,8 @@ h4 {
 }
 
 .crenca-body {
-    color: var(--muted);
-    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-    line-height: 1.9;
+    font-size: clamp(1.05rem, 3vw, 1.2rem);
+    line-height: 1.95;
     margin-bottom: 36px;
     max-width: 580px;
     margin-left: auto;
@@ -912,7 +912,7 @@ h4 {
 }
 
 .crenca-remate {
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: clamp(1.05rem, 3vw, 1.25rem);
     color: var(--muted);
     margin-bottom: 16px;
     font-style: italic;
